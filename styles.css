@@ -1,0 +1,124 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+header {
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a:hover {
+  color: #0071e3;
+}
+
+/* Hero Section */
+.hero {
+  background: #000;
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Product Sections */
+.product-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+.product-section.alt {
+  flex-direction: row-reverse;
+}
+.product-section img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.product-section .text {
+  width: 50%;
+}
+.product-section h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.product-section p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #faf9f9;
+  min-width: 200px;
+  padding: 10px 0;
+  border-radius: 4px;
+  z-index: 1000;
+}
+.dropdown-menu li {
+  padding: 8px 16px;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.dropdown-menu li span {
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
